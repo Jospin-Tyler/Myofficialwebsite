@@ -159,6 +159,7 @@ main {
     padding: 6% 0;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     border-top: 2px solid var(--span-color);
     align-items: center;
 }
@@ -167,10 +168,6 @@ main {
     width: 400px;
 }
 
-
-.about-me {
-    padding-left: 30px;
-}
 
 .about-me .p {
     padding-top: 10px;
@@ -199,6 +196,7 @@ main {
     font-weight: 600;
     cursor: pointer;
     transition: 0.4s;
+    color: var(--text-color);
 }
 
 .about a {
