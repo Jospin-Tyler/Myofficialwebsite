@@ -378,10 +378,21 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 2%;
+    padding: 2% 0 4% 0;
     background-color: rgba(0, 0, 0, 0.245);
     gap: 20px;
 }
+
+footer .logo {
+    display: flex;
+    justify-content: left;
+    padding: 0 30px;
+}
+
+footer .logo:hover {
+    scale: none;
+}
+
 
 footer a {
     padding: 10px;
@@ -514,6 +525,11 @@ footer p {
     .contacts .message {
         width: 80%;
     }
+
+    footer a {
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 490px) {
