@@ -1,6 +1,6 @@
 :root {
     --text-color: black;
-    --span-color: rgba(245, 128, 4, 0.916);
+    --span-color: rgba(16, 175, 233, 0.916);
     --background-color1: whitesmoke;
     --main-padding: 0 5%;
     --scale: 1.1;
@@ -286,8 +286,8 @@ main {
     align-content: center;
     border-bottom: 2px solid var(--span-color);
     padding: 3% 0;
-    text-align: center;
     position: relative;
+    text-align: center;
 }
 
 .contacts h2 {
@@ -376,12 +376,28 @@ label {
 footer {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.245);
+    gap: 20px;
+}
+
+footer a {
+    padding: 10px;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: var(--span-color);
+    text-decoration: underline;
 }
 
 footer p {
-    padding: 30px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 100;
+    color: var(--text-color);
 
 }
 
