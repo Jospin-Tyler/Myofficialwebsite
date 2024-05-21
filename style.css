@@ -379,7 +379,7 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 4% 0;
-    background-color: rgba(0, 0, 0, 0.245);
+    background-color: transparent;
     gap: 20px;
 }
 
