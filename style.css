@@ -11,6 +11,8 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -20,7 +22,27 @@ body {
     margin: auto;
 }
 
+@keyframes oks {
+    from {
+        scale: 0.5;
+        oppacity: 0;
+    }
+
+    to {
+        scale: 1;
+        oppacity: 1;
+    }
+
+}
+
+main div {
+    animation: oks linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
 /* ----------the header-------- */
+
 
 header {
     height: 80px;
@@ -214,6 +236,77 @@ main {
     scale: var(--scale);
     background-color: var(--background-color1);
     border: 1px solid var(--span-color);
+}
+
+
+/* ------------MY SKILLS------------------- */
+
+.skills {
+    padding: 6% 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-top: 2px solid var(--span-color);
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.My-skills {
+    display: flex;
+}
+
+.My-skills .skillname {
+    display: flex;
+    flex-direction: column;
+    color: var(--span-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.My-skills .skillname span {
+    margin: 15px 0;
+    box-shadow: 9px 9px 15px rgba(232, 217, 217, 0.827), -9px -9px 14px rgb(230, 200, 200);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 45px;
+    border: 4px solid rgb(220, 187, 187);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.skillname {
+    margin-right: 40px;
+}
+
+.My-skills .skillname span:hover {
+    box-shadow: inset 9px 9px 15px rgba(232, 217, 217, 0.827), inset -9px -9px 14px rgb(230, 200, 200);
+    border-radius: 15px;
+
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bar {
+    width: 400px;
+    height: 25px;
+    border-radius: 12px;
+    box-shadow: 9px 9px 15px rgba(232, 217, 217, 0.827), -9px -9px 14px rgb(230, 200, 200);
+}
+
+.bar .progress {
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.bar:nth-child(1) {
+    width: 80%;
 }
 
 /* ----------------projects--------------------- */
