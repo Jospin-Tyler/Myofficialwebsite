@@ -69,7 +69,7 @@ header .navlinks ul li a:hover {
 .nav-bar .menu-hambourger {
     top: 50%;
     right: 50px;
-    width: 34px;
+    width: 50px;
     display: none;
     cursor: pointer;
     transition: .3s;
