@@ -73,12 +73,7 @@ header .navlinks ul li a:hover {
     display: none;
     cursor: pointer;
     transition: .3s;
-    border: 2px solid var(--span-color);
     padding: 5px;
-}
-.menu-hambourger:hover {
-    background-color: var(--span-color);
-    border: 2px solid var(--text-color);
 }
 
 
