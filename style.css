@@ -80,7 +80,7 @@ header .navlinks ul li a:hover {
 .logo {
     font-size: 2rem;
     transition: 0.4s;
-    font-weight: 100;
+    font-weight: bold;
     line-height: 20px;
     letter-spacing: 1px;
     cursor: pointer;
