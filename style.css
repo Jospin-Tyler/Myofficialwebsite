@@ -72,12 +72,18 @@ header .navlinks ul li a:hover {
     width: 34px;
     display: none;
     cursor: pointer;
+    transition: .3s;
+    border: 2px solid var(--span-color);
+    padding: 5px;
+}
+.menu-hambourger:hover {
+    background-color: var(--span-color);
+    border: 2px solid var(--text-color);
 }
 
 
 .logo {
     font-size: 2rem;
-    background-color: var(--background-color2);
     transition: 0.4s;
     font-weight: 100;
     line-height: 20px;
@@ -95,10 +101,9 @@ span,
     font-weight: bold;
 }
 strong {
-    border: 3px solid var(--span-color);
+    border-bottom: 3px solid var(--span-color);
     padding: 7px;
     font-weight: bold;
-    z-index: 20;
 
 }
 
