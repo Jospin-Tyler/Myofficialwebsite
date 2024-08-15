@@ -44,10 +44,7 @@ header {
     width: 100%;
     box-sizing: border-box;
 }
-.nav-bar .logo {
-    font-size: 2rem;
-    font-weight: bold;
-}
+
 .navlinks ul {
     display: flex;
     justify-content: space-between;
@@ -76,35 +73,33 @@ header .navlinks ul li a:hover {
     display: none;
     cursor: pointer;
 }
-span,
-.span {
-    color: var(--span-color);
-    font-weight: bold;
-}
 
-strong {
-    border-bottom: 4px solid var(--span-color);
-    padding-bottom: 7px;
-
-}
-.logo-link {
-    display: block;
-    z-index: 100;
-    color: black;
-}
 
 .logo {
-    font-size: 1.7rem;
+    font-size: 2rem;
     background-color: var(--background-color2);
     transition: 0.4s;
     font-weight: 100;
     line-height: 20px;
     letter-spacing: 1px;
     cursor: pointer;
+    z-index: 100;
 }
 
 .logo:hover {
     scale: var(--scale);
+}
+span,
+.span {
+    color: var(--span-color);
+    font-weight: bold;
+}
+strong {
+    border: 3px solid var(--span-color);
+    padding: 7px;
+    font-weight: bold;
+    z-index: 20;
+
 }
 
 p {
@@ -585,9 +580,17 @@ footer p {
     .navlinks ul li {
         padding: 20px;
     }
+    .navlinks ul li a {
+        color: var(--span-color);
+        border: none;
+        background-color: inherit;
+    }
 }
 
 @media screen and (max-width: 880px) {
+    .logo {
+        font-size: 1.5rem;
+    }
     
     .skill {
         margin-bottom: 30px;
@@ -621,6 +624,7 @@ footer p {
 }
 
 @media screen and (max-width: 720px) {
+    
     .about-bloc {
         display: flex;
         flex-wrap: wrap;
@@ -665,6 +669,9 @@ footer p {
 }
 
 @media screen and (max-width: 580px) {
+    .logo {
+        font-size: 1.2rem;
+    }
 
     .home img {
         width: 400px;
@@ -710,11 +717,7 @@ footer p {
 @media screen and (max-width: 490px) {
 
     .logo {
-        font-size: 1.2rem;
-    }
-
-    .header-btn {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     .home h2 {
