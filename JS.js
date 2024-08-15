@@ -1,5 +1,5 @@
-const menuHamberger = document.querySelector(".menu-icon")
-const navlinks = document.querySelector(".nav-bar")
+const menuHamberger = document.querySelector(".menu-hambourger")
+const navlinks = document.querySelector(".navlinks")
 
 menuHamberger.addEventListener('click',()=>{
     navlinks.classList.toggle('mobile-menu')
