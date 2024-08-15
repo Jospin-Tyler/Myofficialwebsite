@@ -30,7 +30,8 @@ header {
     z-index: 200;
     position: sticky;
     top: 0;
-    backdrop-filter: blur(17px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     height: 80px;
     padding: 0 10px;
 }
