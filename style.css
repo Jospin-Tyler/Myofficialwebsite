@@ -49,11 +49,13 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
 .navlinks ul a {
     padding: 20px;
     font-weight: bold;
     transition: .3s;
 }
+
 .active,
 header .navlinks ul li a:hover {
     color: var(--span-color);
@@ -66,6 +68,7 @@ header .navlinks ul li a:hover {
 .menu-hambourger {
     width: 35px;
 }
+
 .nav-bar .menu-hambourger {
     top: 50%;
     right: 50px;
@@ -90,11 +93,13 @@ header .navlinks ul li a:hover {
 .logo:hover {
     scale: var(--scale);
 }
+
 span,
 .span {
     color: var(--span-color);
     font-weight: bold;
 }
+
 strong {
     border-bottom: 3px solid var(--span-color);
     padding: 7px;
@@ -126,6 +131,7 @@ header nav ul li a {
 main {
     padding: var(--main-padding);
 }
+
 
 /* ----------the home section------------- */
 
@@ -548,11 +554,12 @@ footer p {
     .nav-bar {
         padding: 15px;
     }
-    
+
     .nav-bar .menu-hambourger {
         display: block;
         z-index: 10;
     }
+
     .navlinks {
         position: absolute;
         width: 100%;
@@ -566,20 +573,24 @@ footer p {
         backdrop-filter: blur(7px);
         margin-left: -100%;
         transition: .5s ease;
-        
+
     }
+
     .navlinks.mobile-menu {
         margin-left: 0;
-    
+
     }
+
     .navlinks ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .navlinks ul li {
         padding: 20px;
     }
+
     .navlinks ul li a {
         color: var(--span-color);
         border: none;
@@ -591,7 +602,7 @@ footer p {
     .logo {
         font-size: 1.5rem;
     }
-    
+
     .skill {
         margin-bottom: 30px;
         display: flex;
@@ -624,7 +635,21 @@ footer p {
 }
 
 @media screen and (max-width: 720px) {
-    
+
+    .projects h2,
+    .about h2,
+    .skills h2,
+    .contacts h2 {
+        color: rgba(0, 0, 0, 0.824);
+        font-size: 1.5rem;
+    }
+
+    .home h2 {
+        font-size: 1.8rem;
+        line-height: normal;
+        margin: 20px 0;
+    }
+
     .about-bloc {
         display: flex;
         flex-wrap: wrap;
@@ -721,7 +746,7 @@ footer p {
     }
 
     .home h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: normal;
         margin: 20px 0;
     }
