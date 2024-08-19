@@ -1,7 +1,7 @@
 :root {
     --text-color: black;
     --span-color: rgb(13, 174, 223);
-    --background-color1: whitesmoke;
+    --background-color1: rgba(255, 255, 255, 0.997);
     --main-padding: 0 5%;
     --scale: 1.03;
 }
@@ -456,45 +456,50 @@ label {
 
 footer {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    padding: 20px 80px;
     text-align: center;
-    padding: 4% 0;
-    background-color: transparent;
-    gap: 20px;
 }
 
-.footer-header {
+.footer-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: var(--main-padding);
-    gap: 20px;
 }
 
-footer .logo:hover {
-    scale: none;
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
+.footer-contact h1 {
+    margin-bottom: 10px;
 
-
-footer a {
-    padding: 10px;
-    color: var(--text-color);
-    transition: 0.3s;
 }
 
-footer a:hover {
+.footer-contact a {
     color: var(--span-color);
+
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-navigation a {
+    color: var(--span-color);
+}
+
+.footer-navigation a:hover {
+    color: black;
     text-decoration: underline;
 }
 
-footer p {
-    font-size: 1.1rem;
-    font-weight: 100;
-    color: var(--text-color);
 
-}
 
 /* -----------------RESPONSIVE SECTION----------------------------- */
 
@@ -671,24 +676,14 @@ footer p {
         width: 30px;
     }
 
-    .footer-header {
+    .footer-container {
         display: flex;
-        align-content: center;
         flex-direction: column;
+        gap: 20px;
     }
 
-    .footer-linkss {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-    }
-
-
-    footer a {
-        padding: 10px;
-        color: var(--text-color);
-        transition: 0.3s;
+    footer p {
+        margin-top: 20px;
     }
 
 }
