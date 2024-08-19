@@ -470,11 +470,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
 .footer-contact h1 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
 }
 
@@ -497,6 +496,10 @@ footer {
 .footer-navigation a:hover {
     color: black;
     text-decoration: underline;
+}
+
+footer p {
+    color: black;
 }
 
 
